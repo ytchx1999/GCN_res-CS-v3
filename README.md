@@ -1,15 +1,11 @@
 # GCN_res-CS-v3
-This is an improvement of the  [(GCN_res + C&S_v2)](https://github.com/ytchx1999/GCN_res-CS-v2)  model, using the C&amp;S method. **This is the v3 version, which using validation labels in LP.**
+This is an improvement of the  [(GCN_res + C&S_v2)](https://github.com/ytchx1999/GCN_res-CS-v2)  model, using the C&amp;S method. **This is the v3 version.** Here I only use the validation label in the post-processing steps of Label Propagation（LP）, and the validation label information is not used in the training for gradient descent, which can also be seen from the number of parameters. 
 
 ### ogbn-arxiv
 
 + Check out the model：[(GCN_res + C&S_v2)](https://github.com/ytchx1999/GCN_res-CS-v2)
 
 + Check out the C&S method：[C&S](https://arxiv.org/abs/2010.13993)
-
-#### Improvement Strategy：
-
-+ Use validation labels at inference if they are helpful (e.g., via LP in our case)
 
 #### Environmental Requirements
 
